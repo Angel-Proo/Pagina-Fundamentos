@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <title>Actividad 1.3</title>
+</head>
+<body>
+    <header>
+      <nav>
+        <div class="nav-wrapper blue-grey lighten-2">
+          <a href="../index.html" class="brand-logo left">
+            <img
+              src="../img/udeg-removebg-preview (1).png"
+              alt="logo"
+              height="70"
+              class="center"
+            />
+          </a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="./formulario.html" class="waves-effect waves-light btn"><i class="material-icons right">person</i>Registrate</a></li>
+            <li><a href="./discrografia.html">Discografia</a></li>
+            <li><a href="./libros.html">Libros</a></li>
+            <li><a href="./videos.html">Videos</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="parallax-container">
+      <div class="section no-pad-bot">
+        <div class="container">
+          <h1 class="header center white-text">Videos</h1>
+          <div class="row">
+            <div class="card-content flow-text white-text">
+              <p>
+                Actualmente cuenta con un total de 17 videos de sus sencillos, asi como de algunas "canciones huerfanas",
+                las cuales denomina el autor a caciones que no pertenecen a alguno de sus discos de estudio. <br>
+                Dentro de estos podemos encontrar videos que destacan su gusto por el horror clasico, referencia a Stephen King, 
+                asi como un pseudo universo compartido, puesto que encontramos a un personaje particular rondando por varios de sus videos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="parallax">
+        <img
+          src="../img/back.jpg"
+          alt="back"
+          height="800"
+          style="transform: translate3d(-50%, 206.526px, 0px); opacity: 1"
+        />
+      </div>
+    </div>
+    <div class="container">
+        <div class="header center">
+            <h4>Estos son los videos mas representativos</h4>
+            <i><p>
+                Aqui deberian ir videos del artista, pero Youtube no permite incrustar esos videos por derechos de autor,
+                asi que pondre videos que estan libres de esta politica, aunque no tengan que ver, solo como ejemplos practicos.
+            </p></i>
+        </div>
+        <p class="divider"></p>
+        <div class="panel">
+            <div class="video-container">
+                <iframe width="853" height="480" src="https://www.youtube.com/embed/Q8TXgCzxEnw?rel=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <p class="divider"></p>
+            <div class="video-container">
+                <iframe width="853" height="480" src="https://www.youtube.com/embed/rrT6v5sOwJg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+      
+  </body>
+  <script>
+    $(document).ready(function () {
+      $(".parallax").parallax();
+      $('.slider').slider();
+      $('slider').slider('width',800);
+    });
+  </script>
+</html>
