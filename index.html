@@ -25,9 +25,10 @@
   </head>
   <body>
     <header>
+      
       <nav>
         <div class="nav-wrapper blue-grey lighten-2">
-          <a href="index.html" class="brand-logo left">
+          <a href="index.html" class="brand-logo left hide-on-med-and-down">
             <img
               src="./img/udeg-removebg-preview (1).png"
               alt="logo"
@@ -35,7 +36,8 @@
               class="center"
             />
           </a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
             <li><a href="./templates/formulario.html" class="waves-effect waves-light btn pulse"><i class="material-icons right">person</i>Registrate</a></li>
             <li><a href="./templates/discrografia.html">Discografia</a></li>
             <li><a href="./templates/libros.html">Libros</a></li>
@@ -43,6 +45,12 @@
           </ul>
         </div>
       </nav>
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="./templates/formulario.html" class="waves-effect waves-light btn pulse"><i class="material-icons right">person</i>Registrate</a></li>
+          <li><a href="./templates/discrografia.html">Discografia</a></li>
+          <li><a href="./templates/libros.html">Libros</a></li>
+          <li><a href="./templates/videos.html">Videos</a></li>
+      </ul>
     </header>
 
     <div class="parallax-container">
@@ -141,6 +149,7 @@
   </body>
   <script>
     $(document).ready(function () {
+      $('.sidenav').sidenav();
       $(".tooltipped").tooltip();
       $(".parallax").parallax();
     });
