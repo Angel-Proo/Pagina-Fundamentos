@@ -27,21 +27,27 @@
     <header>
       <nav>
         <div class="nav-wrapper blue-grey lighten-2">
-          <a href="../index.html" class="brand-logo left">
+          <a href="../index.html" class="brand-logo center-align-on-med-and-down valign-wrapper">
             <img
               src="../img/udeg-removebg-preview (1).png"
               alt="logo"
               height="70"
-              class="center"
+              class=""
             />
           </a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
             <li><a href="./discrografia.html">Discografia</a></li>
             <li><a href="./libros.html">Libros</a></li>
             <li><a href="./videos.html">Videos</a></li>
           </ul>
         </div>
       </nav>
+      <ul class="sidenav" id="mobile-demo">
+          <li><a href="./discrografia.html">Discografia</a></li>
+          <li><a href="./libros.html">Libros</a></li>
+          <li><a href="./videos.html">Videos</a></li>
+      </ul>
     </header>
 
     <div class="parallax-container">
@@ -131,6 +137,7 @@
   </body>
   <script>
     $(document).ready(function () {
+      $('.sidenav').sidenav();
       $(".tooltipped").tooltip();
       $('.datepicker').datepicker({
         format:'dd/mm/yyyy',
